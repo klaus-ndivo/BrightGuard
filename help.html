@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Get Help | BrightGuard Awareness</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-active="help.html">
+	<div id="navbar"></div>
+
+	<main class="container section">
+		<div class="grid-3 fade-up" style="align-items:start;">
+			<section class="card" style="grid-column: span 2;">
+				<img class="image-cover" src="https://images.unsplash.com/photo-1517957754646-8a2b34ba4e94?q=80&w=1200&auto=format&fit=crop" alt="Reach out for help">
+				<span class="badge" style="margin-top:10px;">Contact</span>
+				<h1>Get Help</h1>
+				<p>If you or someone you know is in danger, call emergency services immediately. For non-emergency support, send us a message and we will connect you with appropriate services.</p>
+				<form id="helpForm" class="stack" style="margin-top: 10px;">
+					<div class="row">
+						<div>
+							<label for="name">Name</label>
+							<input id="name" name="name" placeholder="Your full name" />
+						</div>
+						<div>
+							<label for="email">Email</label>
+							<input id="email" name="email" placeholder="you@example.com" />
+						</div>
+					</div>
+					<div>
+						<label for="message">Message</label>
+						<textarea id="message" name="message" placeholder="How can we help?"></textarea>
+					</div>
+					<div class="actions">
+						<button class="btn btn-primary" type="submit">Send Message</button>
+						<span id="helpNotice" class="muted"></span>
+					</div>
+				</form>
+			</section>
+			<aside class="card">
+				<h3>Emergency Hotlines</h3>
+				<ul>
+					<li>Emergency: 112 / 999</li>
+					<li>Childline / NSPCC</li>
+					<li>Local sexual assault support</li>
+					<li>Police non-emergency line</li>
+				</ul>
+				<div class="stack" style="margin-top: 10px;">
+					<a class="btn btn-primary" href="#">Live Chat (mock)</a>
+					<a class="btn btn-outline" href="#">Call Now (mock)</a>
+				</div>
+			</aside>
+		</div>
+	</main>
+
+	<div id="footer"></div>
+
+	<script src="assets/js/components.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
+
