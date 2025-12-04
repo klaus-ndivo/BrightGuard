@@ -57,7 +57,12 @@ a:hover { text-decoration: underline; }
 
 .brand-logo { width: 32px; height: 32px; border-radius: 8px; background: linear-gradient(135deg, #6b6bd6, #4b4bb0); box-shadow: 0 4px 12px rgba(107,107,214,0.3); }
 
-.nav-links { display: flex; align-items: center; gap: 32px; }
+.nav-links {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+	margin-left: 48px; /* add breathing room between logo and first link */
+}
 
 .nav-links a { color: #ffffff; font-weight: 400; padding: 8px 0; font-size: 14px; letter-spacing: -0.2px; transition: color 0.2s ease; }
 
@@ -144,7 +149,10 @@ form .actions { display: flex; gap: 12px; align-items: center; }
 @media (max-width: 768px) {
 	h1 { font-size: 32px; }
 	.grid-3 { grid-template-columns: 1fr; }
-	.nav-links { display: none; }
+	.nav-links {
+		display: none;
+		margin-left: 0; /* reset so mobile layout is not affected */
+	}
 	.nav-toggle { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; border-radius: 12px; border: 1px solid rgba(31,35,64,0.12); background: #fff; }
 	.mobile-menu { display: grid; gap: 8px; padding: 10px; background: #fff; border: 1px solid rgba(31,35,64,0.08); border-radius: 12px; margin-top: 10px; }
 	.mobile-menu a { padding: 10px; border-radius: 10px; color: var(--muted); }
